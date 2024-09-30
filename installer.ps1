@@ -10,5 +10,5 @@ If (!([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]
  
  $username = read-host "Enter your username like you would for logging into the VPN(ie na\nick.crowley)"
 
- 
+ Unregister-ScheduledTask -TaskName "WSL2Update" -TaskPath "\TASK-PATH-TASKSCHEDULER\" -Confirm:$false
  Register-ScheduledTask -xml (Get-Content $HOME\scripts\UpdateWSL2RoutingforVPN.xml | out-string) -TaskName "WSL2Update" -TaskPath "\TASK-PATH-TASKSCHEDULER\" -user $username
