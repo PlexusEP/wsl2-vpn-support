@@ -7,7 +7,7 @@ $wsl_interface_id   = "eth0"
 $config_default_wsl_guest = 1 # 0: False, 1: True
 $wsl_guest_list = @()
 
-$state_file = "$HOME\wsl-added-routes.txt"
+$state_file = "$HOME\scripts\wsl-added-routes.txt"
 
 ########### End Configuration Parameters
 
